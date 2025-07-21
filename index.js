@@ -1,8 +1,6 @@
-// index.js
 const express = require('express');
 const axios = require('axios');
 const app = express();
-const PORT = 3000;
 
 app.use(express.json());
 
@@ -27,6 +25,6 @@ app.get('/deploy-my-vite-app', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Deploy API running on http://localhost:${PORT}`);
+  console.log(`Deploy API running on http://localhost:${Pprocess.env.PORT}`);
 });
 
