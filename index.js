@@ -24,7 +24,7 @@ app.get('/deploy-my-vite-app', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Deploy API running on http://localhost:${Pprocess.env.PORT}`);
 });
 
