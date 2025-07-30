@@ -3,6 +3,9 @@ const axios = require('axios');
 require('dotenv').config({path:"./.env"});
 
 const app = express();
+app.get("/", (req, res) => {
+  res.send("Deployment API is live!");
+});
 
 app.use(express.json());
 
