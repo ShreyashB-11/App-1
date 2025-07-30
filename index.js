@@ -1,10 +1,12 @@
 const express = require('express');
 const axios = require('axios');
+require('dotenv').config({path:"./.env"});
+
 const app = express();
 
 app.use(express.json());
 
-app.get('/deploy-my-vite-app', async (req, res) => {
+app.get('/deploy', async (req, res) => {
   try {
     const response = await axios.post(
       `https://api.render.com/v1/services/${process.env.APPKEY}/deploys`,
