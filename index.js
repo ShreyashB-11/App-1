@@ -4,7 +4,7 @@ require('dotenv').config({path:"./.env"});
 
 const app = express();
 app.get("/", (req, res) => {
-  res.send("Deployment API is live!");
+  res.send("Deployment API is live 7 aug!");
 });
 
 app.use(express.json());
